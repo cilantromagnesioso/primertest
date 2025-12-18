@@ -4,20 +4,22 @@ body {
 .sip {
     width: 90%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     border-style: solid;
     border-color: rgb(182, 23, 23);
     border-width: 4px;
+    background-color: beige;
 }
 .perfil1 {
     padding-top: 50px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
     height: auto;
 }
 .profile_textochido {
     font-family: "courier new";
     font-size: 24px;
-    padding-left: 5%;
+    padding-left: 50px;
 }
 h1 {
     font-family: arial;
