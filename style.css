@@ -23,7 +23,7 @@ body {
     width: 90%;
     max-width: 1000px;
     font-family: "Delius", cursive;
-    font-size: 18px;
+    font-size: 17px;
     padding: 7px;
     border-style: solid;
     border-color: rgb(104, 17, 17);
@@ -61,7 +61,7 @@ body {
 }
 .nop {
     font-family: "Cutive Mono", monospace;
-    font-size: 100px;
+    font-size: 85px;
     color: azure;
     position: relative;
     bottom: -30px;
