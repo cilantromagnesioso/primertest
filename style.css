@@ -1,16 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Delius&display=swap');
 body {
     background-color: bisque;
+    margin: 0;
+}
+.parte1{
+    border: 10px bisque;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.python {
+    background-color: rgb(10, 20, 6);
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 50vh;
 }
 .sip {
     width: 90%;
     max-width: 1000px;
-    padding: 10px;
-    font-family: cursive;
-    font-size: 14px;
+    font-family: "Delius", cursive;
+    font-size: 18px;
+    padding: 7px;
     border-style: solid;
-    border-color: rgb(182, 23, 23);
-    border-width: 4px;
+    border-color: rgb(104, 17, 17);
+    border-width: 3px;
+    border-radius: 5px;
     background-color: beige;
+    box-shadow: 0 2px 4px black;
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+}
+.sip:hover {
+    border-width: 4px;
+    box-shadow: 0 2px 8px;
+}
+.sip:focus {
+    border-style: solid;
+    border-color: rgb(29, 0, 0);
+    border-width: 4px;
+    outline: 0px;
 }
 .perfil1 {
     padding-top: 30px;
@@ -19,12 +51,59 @@ body {
     height: auto;
 }
 .profile_textochido {
-    font-family: "courier new";
+    font-family: "Delius", cursive;
     font-size: 24px;
-    padding-left: 5%;
 }
-h1 {
-    font-family: arial;
+.holal {
+    font-family: "Delius", cursive;
     font-size: 50px;
     text-align: center;
+}
+.nop {
+    font-family: "Cutive Mono", monospace;
+    font-size: 100px;
+    color: azure;
+    position: relative;
+    bottom: -30px;
+}
+.pobre {
+    font-family: "Cutive Mono", monospace;
+    font-size: 22px;
+    color: white;
+}
+.boto1 {
+    font-family: "Delius", cursive;
+    font-size: 20px;
+    padding: 7px 30px;
+    background-color: rgb(240, 229, 218);
+    border-style: solid;
+    box-shadow: 0 2px 4px black;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+.boto1:hover {
+    background-color: rgb(223, 212, 200);
+    box-shadow: 0 2px 8px
+}
+.boto1:active {
+    position: relative;
+    top: 2px;
+}
+.jobapi {
+    font-family: "Times New Roman";
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 25px;
+    height: 110vh;
+}
+.profile_otro {
+    font-family: "Delius", cursive;
+    font-size: 20px;
+}
+.onoermano {
+    font-size: 50px;
 }
