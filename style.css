@@ -14,10 +14,10 @@ body {
     padding-right: 20px;
 }
 .python {
-    background-color: rgb(10, 20, 6);
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 50vh;
+    background-color: rgb(12, 22, 7);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 40px;
 }
 .sip {
     width: 90%;
@@ -61,7 +61,7 @@ body {
 }
 .nop {
     font-family: "Cutive Mono", monospace;
-    font-size: 85px;
+    font-size: clamp(4.5rem, 5vw, 6rem);
     color: azure;
     position: relative;
     bottom: -30px;
@@ -70,6 +70,49 @@ body {
     font-family: "Cutive Mono", monospace;
     font-size: 22px;
     color: white;
+}
+.pobreint {
+    display: inline-block;
+    background-color: black;
+    outline: 2px solid rgb(255, 217, 217);
+    font-family: "Cutive Mono", monospace;
+    font-size: 35px;
+    color: white;
+    padding: 10px 40px;
+    box-shadow: 0 0 10px;
+}
+.pobrebot {
+    color: red;
+}
+.py {
+    display: block;
+    width: fit-content;
+    background-color: black;
+    outline: 2px solid rgb(255, 217, 217);
+    font-family: "Cutive Mono", monospace;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px;
+}
+.noseque {
+    font-family: "Cutive Mono", monospace;
+    font-size: 22px;
+}
+.pysiz {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+.links {
+    display: block;
+    color: rgb(96, 96, 255);
+    width: fit-content;
+    outline: 2px solid rgb(87, 156, 212);
+    padding: 10px 20px;
+    background-color: rgb(2, 0, 24);
+    font-family: "Cutive Mono", monospace;
+    font-size: 25px;
 }
 .boto1 {
     font-family: "Delius", cursive;
@@ -92,18 +135,32 @@ body {
 .jobapi {
     font-family: "Times New Roman";
     background-color: rgb(212, 212, 212);
+    position: relative;
+    height: 100vh;
+}
+.temp {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     padding-left: 30px;
     padding-right: 20px;
     padding-top: 25px;
-    height: 110vh;
 }
 .profile_otro {
     font-family: "Delius", cursive;
     font-size: 20px;
 }
 .onoermano {
-    font-size: 50px;
+    font-size: 55px;
+}
+.dvdxd {
+    position: absolute;
+    width: 15%;
+    min-width: 150px;
+    height: auto;
+    pointer-events: none;
+}
+.zzz {
+    font-size: 25px;
 }
