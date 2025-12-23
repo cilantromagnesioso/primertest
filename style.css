@@ -108,7 +108,7 @@ body {
     display: block;
     color: rgb(96, 96, 255);
     width: fit-content;
-    outline: 2px solid rgb(87, 156, 212);
+    outline: 4px solid rgb(87, 156, 212);
     padding: 10px 20px;
     background-color: rgb(2, 0, 24);
     font-family: "Cutive Mono", monospace;
