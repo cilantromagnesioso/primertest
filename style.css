@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Delius&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Delius&family=Merienda:wght@300..900&family=Metrophobic&display=swap');
+:root {
+    --color1p1: #cfff60;
+    --color1p2: #a8d457;
+    --color1p3: #0d1800;
+    --color2p1: #6060ff;
+    --color2p2: #579cd4;
+    --color2p3: #020018;
+}
 body {
     background-color: bisque;
     margin: 0;
@@ -23,7 +31,7 @@ body {
     width: 90%;
     max-width: 1000px;
     font-family: "Delius", cursive;
-    font-size: 17px;
+    font-size: 15px;
     padding: 7px;
     border-style: solid;
     border-color: rgb(104, 17, 17);
@@ -74,12 +82,12 @@ body {
 .pobreint {
     display: inline-block;
     background-color: black;
-    outline: 2px solid rgb(255, 217, 217);
+    outline: 2px solid #e2ff3e;
     font-family: "Cutive Mono", monospace;
-    font-size: 35px;
+    font-size: 31px;
     color: white;
     padding: 10px 40px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px #e2ff3e;
 }
 .pobrebot {
     color: red;
@@ -88,31 +96,115 @@ body {
     display: block;
     width: fit-content;
     background-color: black;
-    outline: 2px solid rgb(255, 217, 217);
+    outline: 2px solid #e2ff3e;
     font-family: "Cutive Mono", monospace;
     font-size: 20px;
     color: white;
     padding: 10px 20px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px #e2ff3e;
+}
+.py1 {
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    background-color: black;
+    outline: 2px solid #e2ff3e;
+    font-family: "Cutive Mono", monospace;
+    font-size: 20px;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px #e2ff3e;
+}
+.py2 {
+    display: block;
+    width: 30%;
+    min-width: 310px;
+    background-color: black;
+    outline: 2px solid #e2ff3e;
+    padding-left: 10px;
+    box-shadow: 0 0 10px #e2ff3e;
+}
+.eljogor {
+    opacity: 0;
+    width: 100%;
+    height: auto;
+}
+.eljogor.atas {
+    animation: blinkal 1.2s both;
+}
+@keyframes blinkal {
+    0% {
+        opacity: 0;
+    }
+    14% {
+        opacity: 0.3;
+    }
+    24% {
+        opacity: 0.1;
+    }
+    34% {
+        opacity: 0.3;
+    }
+    39% {
+        opacity: 0.2;
+    }
+    45% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    58% {
+        opacity: 0.7;
+    }
+    63% {
+        opacity: 0;
+    }
+    72% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.1;
+    }
+    88% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
 }
 .noseque {
     font-family: "Cutive Mono", monospace;
-    font-size: 22px;
+    font-size: 20px;
 }
 .pysiz {
-    width: 100%;
-    max-width: 800px;
+    width: 99%;
+    max-width: 1000px;
     height: auto;
 }
 .links {
     display: block;
-    color: rgb(96, 96, 255);
+    color: #cfff60;
     width: fit-content;
-    outline: 4px solid rgb(87, 156, 212);
+    outline: 2px solid #a8d457;
     padding: 10px 20px;
-    background-color: rgb(2, 0, 24);
+    background-color: #0d1800;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
     font-family: "Cutive Mono", monospace;
     font-size: 25px;
+    transition: color 0.5s ease, outline 0.5s ease, background-color 0.5s ease;
+}
+.links:hover {
+    color: #6060ff;
+    outline: 4px solid #579cd4;
+    background-color: #020018;
+    text-decoration-thickness: 3px;
+}
+.typewriter {
+    overflow: hidden;
 }
 .boto1 {
     font-family: "Delius", cursive;
@@ -163,4 +255,306 @@ body {
 }
 .zzz {
     font-size: 25px;
+}
+.quiz {
+    background-color: rgb(151, 196, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 40px;
+    position: relative;
+}
+.quiz_titulo {
+    font-family: "Metrophobic", sans-serif;
+    font-size: 70px;
+}
+.quiz_texto {
+    font-family: "Metrophobic", sans-serif;
+    font-size: 22px;
+}
+.quiz_in1 {
+    font-size: 20px;
+}
+.quiz_form {
+    background-color: rgb(86, 208, 238);
+    outline: 4px solid rgb(34, 156, 187);
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-right: 10px;
+}
+.in_tex {
+    padding: 15px;
+    font-family: "Metrophobic", sans-serif;
+    font-size: 20px;
+}
+.iqrad {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-family: "Metrophobic", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    width: fit-content;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+}
+.iqrad input {
+    display: none;
+}
+.iqrad .iqsel {
+    display: none;
+}
+.iqrad input:hover ~ .iqsel {
+    display: inline;
+    position: absolute;
+}
+.iqrad img {
+    width: 32px;
+    height: auto;
+}
+.iqrad .iqon {
+    display: none;
+}
+.iqrad input:checked ~ .iqon {
+    display: inline;
+    position: absolute;
+}
+.quiz_num {
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.quiz_num input::-webkit-inner-spin-button,
+.quiz_num input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.quiz_num input {
+    -moz-appearance: textfield;
+}
+.iqbotones {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.iqbotones button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.iqbotones img {
+    width: 22px;
+    height: auto;
+}
+.cuidado {
+    display: flex;
+}
+.iqnum {
+    font-family: "Metrophobic", sans-serif;
+    font-size: 18px;
+    background-color: #9DE6F7;
+    border-style: solid;
+    border-color: rgb(34, 156, 187);
+    border-width: 3px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.iq67 {
+    padding: 20px;
+}
+.iq68 {
+    font-family: "Metrophobic", sans-serif;
+    font-size: 22px;
+}
+.iq69 {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 22px;
+    border-radius: 11px;
+    background: #9DE6F7;
+    outline: 2px solid rgb(34, 156, 187);
+    padding: 0 4px;
+}
+.iq69:hover {
+    outline: 3px solid rgb(8, 124, 153);
+}
+.iq69::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgb(85, 85, 255);
+    outline: 2px solid rgb(0, 0, 102);
+}
+.iq69::-webkit-slider-thumb:hover {
+    width: 16px;
+    height: 16px;
+    background-color: blue;
+}
+.iq70 {
+    display: flex;
+    width: 100%;
+}
+.iq71 {
+    width: 100%;
+    height: auto;
+}
+.iq11 {
+    width: 50%;
+    min-width: 200px;
+}
+.iq10 {
+    width: 50%;
+}
+.iq101 {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    align-items: center;
+}
+.iq100 {
+    font-family: "Metrophobic", sans-serif;
+    font-size: 20px;
+    padding: 7px 30px;
+    background-color: #9DE6F7;
+    box-shadow: 0 0 3px black;
+    border-color: rgb(85, 85, 255);
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    cursor: pointer;
+    bottom: 0px;
+    transition: box-shadow 0.5s ease, border-width 0.4s ease, transform 0.3s ease-in-out;
+}
+.iq100:hover {
+    transform: translateY(-3px);
+    border-width: 3px;
+    box-shadow: 0 0 10px;
+}
+.iq100:active {
+    position: relative;
+    top: 2px;
+}
+.fiu {
+    display: flex;
+    background-color: #5decff;
+    padding-left: 4%;
+    padding-right: 5%;
+    padding-bottom: 40px;
+}
+.fliurer {
+    font-family: "Merienda", cursive;
+    font-weight: 400;
+    font-size: clamp(4.5rem, 5vw, 6rem);
+}
+.fiutexto1 {
+    opacity: 0;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%, black 100%);
+    -webkit-mask-size: 200% 100%;
+    -webkit-mask-position: 0% 0%;
+    font-family: "Merienda", cursive;
+    font-weight: 700;
+    font-size: 20px;
+    transition: opacity 3s ease, -webkit-mask-position 3s ease;
+}
+.fiutexto1.volarf {
+    opacity: 1;
+    -webkit-mask-position: 100% 0%;
+}
+.fiu20 {
+    width: 100%;
+    height: auto;
+}
+.recflur1 {
+    display: flex;
+    width: 25%;
+    min-width: 300px;
+    background-color: #000;
+    outline: 3px solid #68d2ec;
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px #112c31;
+}
+.recflur2 {
+    display: block;
+    width: fit-content;
+    background-color: #c4f8ff;
+    outline: 3px solid #68d2ec;
+    border-radius: 15px;
+    padding: 0 20px;
+    box-shadow: 0 0 10px #112c31;
+}
+.recflur3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    background-color: #c4f8ff;
+    outline: 3px solid #68d2ec;
+    border-radius: 15px;
+    padding: 0px 20px;
+    box-shadow: 0 0 10px #112c31;
+}
+.fiulinks {
+    display: block;
+    width: fit-content;
+    background-color: #99eaf5;
+    outline: 4px solid rgb(84, 164, 175);
+    border-radius: 15px;
+    padding: 10px 20px;
+    box-shadow: 0 0 30px #0086df;
+}
+.lios {
+    color: #68d2ec;
+    font-family: "Merienda", cursive;
+    font-size: 20px;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    animation: plsa 1s ease-in-out infinite backwards;
+}
+.lios:active {
+    text-decoration-thickness: 4px;
+}
+@keyframes plsa {
+    0% {
+        color: #3719e2;
+    }
+    50% {
+        color: #1969e2;
+    }
+    100% {
+        color: #3719e2
+    }
+}
+.fiu21 {
+    display: block;
+    height: 140px;
+}
+.fiu22 {
+    width: 80%;
+    height: auto;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #68d2ec;
+}
+.fiuespacio {
+    display: block;
+    height: 10px;
+}
+.fiugrande {
+    padding: 8px 20px;
+    font-size: 30px;
+}
+.fiupad {
+    padding: 8px 0;
 }
