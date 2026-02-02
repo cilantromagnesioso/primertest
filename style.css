@@ -283,6 +283,20 @@ body {
     outline: 4px solid rgb(34, 156, 187);
     border-radius: 15px;
     box-shadow: 0 0 15px black;
+    width: 96%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-right: 10px;
+}
+.quiz_formrr {
+    background-color: rgb(86, 208, 238);
+    outline: 4px solid rgb(34, 156, 187);
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    width: 96%;
     max-width: 1000px;
     margin: auto;
     margin-top: 40px;
@@ -295,10 +309,16 @@ body {
     font-family: "Metrophobic", sans-serif;
     font-size: 20px;
 }
+.iqrespuesta {
+    font-family: "Metrophobic", sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
 .iqrad {
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 20px;
     font-family: "Metrophobic", sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -408,10 +428,21 @@ body {
 .iq71 {
     width: 100%;
     height: auto;
+    grid-area: 1 / 1 / 2 /2;
+}
+.iq400 {
+    width: 100%;
+    height: auto;
+    grid-area: 1 / 1 / 2 / 2;
+    opacity: 0;
+    transition: opacity 5s ease; 
+}
+.iq400.iq401 {
+    opacity: 1;
 }
 .iq11 {
+    display: grid;
     width: 50%;
-    min-width: 200px;
 }
 .iq10 {
     width: 50%;

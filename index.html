@@ -11,7 +11,7 @@
     <div class="parte1">
         <h1 class="holal">Hola mundo</h1>
         <h2 class="profile_textochido">Esto es una prueba para ver si se usar los lenguajes de programacion HTML, CSS y javascript, actualizare esta pagina de vez en cuando para añadir cosas</h2>
-        <input class="sip" id="nowe" type="text" maxlength="100" placeholder="¡Hola!, soy un cuadro de texto, escribe aqui">
+        <input class="sip" id="nowe" type="text" maxlength="25" placeholder="¡Hola!, soy un cuadro de texto, escribe aqui">
         <button class="boto1" onclick="laburo()">Despues, pulsa este boton</button>
         <h2 class="profile_otro" id="siwe">Hola</h2>
         <script src="mcjava.js"></script>
@@ -74,10 +74,193 @@
             <script src="tyscri1.js"></script>
         </div>
     </div>
-    <div class="quiz">
-        <div>
+    <div>
+        <div class="quiz">
             <h1 class="quiz_titulo">Quiz de IQ</h1>
-            <h2 class="quiz_texto">Proximamente</h2>
+            <h2 class="quiz_texto">Bienvenido al quiz de IQ, aqui vamos a probar que tan inteligente eres con preguntas de conocimiento general</h2>
+            <form class="quiz_form">
+                <h2 class="in_tex">1.-¿Por que la comida se llama comida si no esta comida?</h2>
+                <label class="iqrad">
+                    <input type="radio" name="q1" value="1" data-text="Algo bien">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Porque yo me la comi
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q1" value="2" data-text="¿Trabajas en la RAE?">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Comida no es un verbo
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q1" value="3" data-text="._.">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    No se
+                </label><br>
+                <h2 class="comeniq iqrespuesta"></h2>
+            </form>
+            <form class="quiz_form" id="pre2">
+                <h2 class="in_tex">2.- Resuelve la siguiente operacion: 1 + (33 x 33 - 33) / 32 + 66 - 99 =</h2>
+                <label class="iqrad">
+                    <input type="radio" name="q2" value="1" data-text="Es una division amigou">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    No se que significa la diagonal
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q2" value="2" data-text="No encuentro fallas en tu logica">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Es 33, no tengo pruebas pero tampoco dudas
+                </label><br>
+                <div class="cuidado">
+                    <label class="quiz_num">
+                        <input type="number" name="q2" value="0" min="0" max="67" id="iqele" class="iqnum" readonly>
+                    </label>
+                    <label class="iqbotones">
+                        <button type="button" class="iq_mas">
+                            <img src="iqmas1.png" alt="iqquizm1">
+                        </button>
+                        <button type="button" class="iq_menos">
+                            <img src="iqmenos1.png" alt="iqquizm3">
+                        </button>
+                    </label>
+                </div>
+                <label class="iqrad">
+                    <input type="radio" name="q2" value="4" data-text=":(">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    No se
+                </label><br>
+                <h2 class="comeniq iqrespuesta" id="iqwaos"></h2>
+                <script src="numiq.js"></script>
+            </form>
+            <form class="quiz_form">
+                <h2 class="in_tex">3.-Si mi objetico es fracasar y fracaso, ¿triunfe o fracase?</h2>
+                <label class="iqrad">
+                    <input type="radio" name="q3" value="1" data-text="Que optimista">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Triunfaste
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q3" value="2" data-text="Que pesimista">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Fracasaste
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q3" value="3" data-text=">:(">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    ¿Objetico?
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q3" value="4" data-text="Tiene sentido">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    No se
+                </label><br>
+                <h2 class="comeniq iqrespuesta"></h2>
+            </form>
+            <form class="quiz_formrr">
+                <h2 class="in_tex">4.-¿Cuantos años tienes?</h2>
+                <label class="pregunta3">
+                    <div class="iq67">
+                        <input type="range" class="iq69" id="redad" min="0" max="100" value="0" step="1">
+                        <output class="iq68" id="finedad"></output>
+                        <script src="quizrango.js"></script>
+                    </div>
+                </label>
+                <h2 class="comeniqrr iqrespuesta"></h2>
+            </form>
+            <form class="quiz_form">
+                <h2 class="in_tex">5.-¿Por que a la gente mayor les dicen "viejos", pero a los bebes no les dicen "nuevos"?</h2>
+                <label class="iqrad">
+                    <input type="radio" name="q5" value="1" data-text="Hoy no es el dia del payaso">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Yo si les digo "nuevos" a los bebes
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q5" value="2" data-text="Tu si le sabes">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Decirle viejos a la gente mayor es una mala costumbre
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q5" value="3" data-text="¿Que?">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    Abuelos
+                </label><br>
+                <label class="iqrad">
+                    <input type="radio" name="q5" value="4" data-text="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz">
+                    <img class="iqoff" src="iq1.png">
+                    <img class="iqon" src="iq2.png">
+                    <img class="iqsel" src="iq3.png">
+                    nose
+                </label><br>
+                <h2 class="comeniq iqrespuesta"></h2>
+            </form>
+            <form class="quiz_form">
+                <h2 class="in_tex">6.-¿Que animal es este?</h2>
+                <div class="iq70">
+                    <div class="iq10">
+                        <label class="iqrad">
+                            <input type="radio" name="q6" value="1" data-text="Era muy obvio">
+                            <img class="iqoff" src="iq1.png">
+                            <img class="iqon" src="iq2.png">
+                            <img class="iqsel" src="iq3.png">
+                            Elefante
+                        </label><br>
+                        <label class="iqrad">
+                            <input type="radio" name="q6" value="2" data-text="Era muy obvio">
+                            <img class="iqoff" src="iq1.png">
+                            <img class="iqon" src="iq2.png">
+                            <img class="iqsel" src="iq3.png">
+                            Rinoceronte
+                        </label><br>
+                        <label class="iqrad">
+                            <input type="radio" name="q6" value="3" data-text="Era muy obvio">
+                            <img class="iqoff" src="iq1.png">
+                            <img class="iqon" src="iq2.png">
+                            <img class="iqsel" src="iq3.png">
+                            Triceratops
+                        </label><br>
+                        <label class="iqrad">
+                            <input type="radio" name="q6" value="4" data-text="Le atinaste">
+                            <img class="iqoff" src="iq1.png">
+                            <img class="iqon" src="iq2.png">
+                            <img class="iqsel" src="iq3.png">
+                            Cufant
+                        </label><br>
+                    </div>
+                    <div class="iq11">
+                        <img class="iq71" src="cufant1.png">
+                        <img class="iq400" src="cufant2.png">
+                    </div>
+                </div>
+                <h2 class="comeniq iqrespuesta"></h2>
+            </form>
+            <div class="iq101">
+                <button type="button" class="iq100" id="iq100">REVISAR RESPUESTAS</button>
+                <script src="quizrev.js"></script>
+            </div>
         </div>
     </div>
     <div class="jobapi">
