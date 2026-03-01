@@ -4,21 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="htlmtes.png" type="image/png">
-    <title>Hola gente</title>
+    <title>De pepperoni</title>
+    <meta name="title" content="De pepperoni" />
+    <meta name="description" content="¿Sabes que tiene la pizza?" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cilantromagnesioso.github.io/primertest/" />
+    <meta property="og:title" content="De pepperoni" />
+    <meta property="og:description" content="¿Sabes que tiene la pizza?" />
+    <meta property="og:image" content="https://cilantromagnesioso.github.io/primertest/plogo.png" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="parte1">
-        <h1 class="holal">Hola mundo</h1>
-        <h2 class="profile_textochido">Esto es una prueba para ver si se usar los lenguajes de programacion HTML, CSS y javascript, actualizare esta pagina de vez en cuando para añadir cosas</h2>
-        <input class="sip" id="nowe" type="text" maxlength="25" placeholder="¡Hola!, soy un cuadro de texto, escribe aqui">
-        <button class="boto1" onclick="laburo()">Despues, pulsa este boton</button>
-        <h2 class="profile_otro" id="siwe">Hola</h2>
-        <script src="mcjava.js"></script>
-        <img src="hornet.png" class="perfil1" title="esto es un proyecto de ingles con una hornet para que se vea mejor">
-        <h2 class="profile_textochido">Hola, mira, <a href="https://www.youtube.com/watch?v=NATSpYWERIE" title="DAME DINERO">AQUI</a> hay un link chido</h2>
+    <div id="inicio" class="parte1">
+        <h2 class="hola2">Esta pagina es</h2>
+        <label class="holal">De pepperoni</label>
+        <p class="profile_textochido">Una pizza tiene una masa de base, la caracteristica combinacion de salse de tomate y queso, y por ultimo los toppings que le dan el dinamismo al sabor, esta pagina web tiene un codigo HTML para textos, imagenes y estructura general, CSS para darle estilo y color, y JavaScript para que los procesos de botones, interactividad e ideas creativas funcionen.</p>
+        <div class="inir1">
+            <div class="inir2">
+                <div class="iniflex">
+                    <p class="profile_textochido">Esta pagina fue hecha para poner a prueba mi conocimiento y aprendizaje de estos tres lenguajes de programacion (HTML, CSS, y JavaScript).</p>
+                </div>
+                <div class="iniflex inishadow">
+                    <div class="ini2">
+                        <select id="inisel" class="inisel">
+                            <option value="default">comparacion de pizzas</option>
+                            <option value="ohtml">con HTML</option>
+                            <option value="ocss">con HTML y CSS</option>
+                            <option value="ojs">con HTML, CSS y JavaScript</option>
+                        </select>
+                        <p class="inipa iniwei" id="initextoini">Con el selector que esta aqui puedes ver como se ve esta seccion sin algunos de los ingredientes esenciales</p>
+                        <img src="plogo.png" id="inipizza" class="inipizza">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inir3">
+            <div class="iniflex">
+                <fieldset class="inifield">
+                    <legend class="inititul">¿Que hay de nuevo?</legend>
+                    <p class="inipa">- Se añadio la seccion de la solucitud de empleo (parodia)</p>
+                    <p class="inipa">- Se rediseño por completo la seccion inicial (la que estas viendo ahora)</p>
+                    <p class="inipa">- cambios menores</p>
+                    <img class="inimg" src="qimg.png">
+                </fieldset>
+            </div>
+            <div class="iniflex">
+                <h2 class="inidice">Indice de secciones</h2>
+                <button class="iniini" onclick="inicontrol('inicio')">Inicio</button><br>
+                <button class="inipy" onclick="inicontrol('python')">-Python</button><br>
+                <button class="inifiu" onclick="inicontrol('flutter')">&gt;Flutter</button><br>
+                <button class="iniquiz" onclick="inicontrol('quiziq')">Quiz de IQ</button><br>
+                <button class="inijob" onclick="inicontrol('jobsolicitud')">Solicitud de empleo</button>
+            </div>
+            <h2 class="iniv">Version 1.6.0</h2>
+        </div>
     </div>
-    <div class="python" id="pyseto">
+    <div class="python" id="python">
         <h1 class="nop">-Python</h1>
         <h2 class="pobre typewriter" data-text="Aqui publicare programas que hice en Python (cada que tenga uno, obvio)">_</h2>
         <div class="fiuespacio">
@@ -36,7 +77,7 @@
         <h2 class="pobreint typewriter" data-text="Link de descarga:">_</h2>
         <a href="eljuegodelboton.zip" class="links" download>El juego del boton DEMO.zip</a>
     </div>
-    <div class="fiu">
+    <div class="fiu" id="flutter">
         <div>
             <div class="fiu21">
                 <h1 class="fliurer">&gt;Flutter</h1>
@@ -74,7 +115,7 @@
             <script src="tyscri1.js"></script>
         </div>
     </div>
-    <div>
+    <div id="quiziq">
         <div class="quiz">
             <h1 class="quiz_titulo">Quiz de IQ</h1>
             <h2 class="quiz_texto">Bienvenido al quiz de IQ, aqui vamos a probar que tan inteligente eres con preguntas de conocimiento general</h2>
@@ -209,7 +250,7 @@
                     Abuelos
                 </label><br>
                 <label class="iqrad">
-                    <input type="radio" name="q5" value="4" data-text="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz">
+                    <input type="radio" name="q5" value="4" data-text="zzzzzzzzzzzzzzzzzz">
                     <img class="iqoff" src="iq1.png">
                     <img class="iqon" src="iq2.png">
                     <img class="iqsel" src="iq3.png">
@@ -263,13 +304,238 @@
             </div>
         </div>
     </div>
-    <div class="jobapi">
-        <img src="horne.png" class="dvdxd">
-        <script src="dvd.js"></script>
+    <div class="jobapi" id="jobsolicitud">
         <div class="temp">
-            <h1 class="onoermano">¿?</h1>
-            <h2 class="zzz">Esta seccion tardara mucho en ser creada, asi que de momento va a estar esta imagen para que no se vea tan aburrido</h2>
+            <h1 class="onoermano">SOLICITUD DE EMPLEO</h1>
+            <h2 class="zzz">Una solicitud de empleo es un documento, formulario físico o digital, que los candidatos completan para postularse formalmente a un puesto de trabajo. Esta solicitud de empleo es una version simplificada y parodiada de una solicitud de empleo real.</h2>
+            <div class="job123">
+                <div>
+                    <h1 class="jobtitulo">SOLICITUD DE EMPLEO</h1>
+                    <div class="jobyawe">
+                        <div class="jobflex">
+                            <label class="jobtextos" for="trabaja">Puesto solicitado: </label>
+                            <select id="trabaja" name="trabaja" class="jobtextos2 jobselect">
+                                <option value="z">...</option>
+                                <option value="a" id="trabajo1">Lexicografo de la RAE</option>
+                                <option value="b">Astronauta de la NASA</option>
+                                <option value="c" id="trabajo3">Doctor del IMSS</option>
+                                <option value="d" id="trabajo4">Contador del SAT</option>
+                                <option value="e" id="trabajo5">Diseñador web</option>
+                                <option value="f" id="trabajo6">Veterinario</option>
+                                <option value="g">Genio</option>
+                                <option value="h">Albañil</option>
+                                <option value="i">Chef</option>
+                            </select>
+                            <div style="height: 10px;"></div>
+                            <div>
+                                <label class="jobtextos">Fecha (hoy):</label>
+                                <input type="date" class="jobfecha" id="jobtiempo">
+                            </div>
+                        </div>
+                        <div class="jobflex gen_izq">
+                            <label class="jobtextos">Sueldo mensual deseado:</label>
+                            <div>
+                                <input class="jobjava1 jobinput" type="number" value="0" min="0" max="200000" id="jobsmd">
+                                <label class="jobnotas" id="jobmoneda">MXN</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: block; padding: 20px;">
+                        <fieldset class="jobfield">
+                            <legend class="jobleyenda">Datos personales</legend>
+                            <div style="display: flex; flex-wrap: wrap;">
+                                <div class="jobflex">
+                                    <div>
+                                        <label class="jobtextos">Apellidos:</label>
+                                        <input type="text" class="jobinput jobespecial" id="jobapellido">
+                                    </div>
+                                    <div style="height: 15px"></div>
+                                    <div>
+                                        <label class="jobtextos">Nombres:</label>
+                                        <input type="text" class="jobinput jobespecial" id="jobnombre">
+                                    </div>
+                                    <div style="height: 15px"></div>
+                                    <div>
+                                        <label class="jobtextos">Numero de telefono:</label>
+                                        <input type="tel" id="jobphone" maxlength="12" class="jobinput jobnum2">
+                                    </div>
+                                    <div style="height: 15px"></div>
+                                </div>
+                                <div class="jobflex">
+                                    <div>
+                                        <label class="jobtextos">Edad:</label>
+                                        <input type="number" id="jobedad" value="18" min="1" max="100" class="jobjava1 jobinput jobnum2">
+                                        <label class="jobnotas">años</label>
+                                    </div>
+                                    <div style="height: 15px"></div>
+                                    <div>
+                                        <label class="jobtextos">Sexo:</label>
+                                        <select id="jobS" name="jobS" class="jobtextos2 jobselect">
+                                            <option value="a">Masculino</option>
+                                            <option value="b">Femenino</option>
+                                        </select>
+                                    </div>
+                                    <div style="height: 15px"></div>
+                                    <div>
+                                        <label class="jobtextos">Nacionalidad:</label>
+                                        <select id="jobnacion" class="jobtextos2 jobselect">
+                                            <option value="a">Mexicana</option>
+                                            <option value="b">Estadounidense</option>
+                                            <option value="c">China</option>
+                                            <option value="d">Venezolana</option>
+                                            <option value="e">Extraterrestre</option>
+                                            <option value="f">Francesa</option>
+                                            <option value="g">Japonesa</option>
+                                            <option value="h">Chilena</option>
+                                            <option value="i">Peruana</option>
+                                        </select>
+                                    </div>
+                                    <div style="height: 15px"></div>
+                                    <div>
+                                        <label class="jobtextos">Fecha de nacimiento:</label>
+                                        <input type="date" id="jobisna" class="jobfecha">
+                                    </div>
+                                    <div style="height: 15px"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="jobtextos" for="jobdomi">Domicilio:</label>
+                                <select id="jobdomi" name="jobdomi" class="jobtextos2 jobselect jobespecial">
+                                    <option value="z">...</option>
+                                    <option value="a">Calle sin nombre, casa sin numero</option>
+                                    <option value="b">La calle al lado de un oxxo, casa #10</option>
+                                    <option value="c">Debajo de un puente de Nueva York</option>
+                                    <option value="d">Mi casa</option>
+                                    <option value="e">La mansion de Mr.Beast</option>
+                                    <option value="f">Soy nomada, no tengo una sola casa</option>
+                                    <option value="g">Una cabaña en medio del bosque tropical del Amazonas</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <div style="height: 15px"></div>
+                        <fieldset class="jobfield">
+                            <legend class="jobleyenda">Escolaridad</legend>
+                            <label class="jobtextos">Nivel de escolaridad:</label>
+                            <select id="jobskul" class="jobtextos2 jobselect jobespecial">
+                                <option value="0">...</option>
+                                <option value="1">Primaria</option>
+                                <option value="2">Secundaria</option>
+                                <option value="3">Bachillerato o preparatoria</option>
+                                <option value="4">Licenciatura/tecnico superior universitario</option>
+                                <option value="5">Maestria</option>
+                                <option value="6">Doctorado</option>
+                            </select>
+                        </fieldset>
+                        <div style="height: 15px"></div>
+                        <fieldset class="jobfield">
+                            <legend class="jobleyenda">Conocimientos generales</legend>
+                            <div style="display: flex; flex-wrap: wrap;">
+                                <div class="jobflex">
+                                    <div>
+                                        <label class="jobtextos">Idiomas que domina:</label><br>
+                                        <input type="checkbox" id="idioma1" class="jobcheck">
+                                        <label for="idioma1" class="jobtextos">Inglés</label><br>
+                                        <input type="checkbox" id="idioma2" class="jobcheck">
+                                        <label for="idioma2" class="jobtextos">Chino mandarin</label><br>
+                                        <input type="checkbox" id="idioma3" class="jobcheck">
+                                        <label for="idioma3" class="jobtextos">Francés</label><br>
+                                        <input type="checkbox" id="idioma4" class="jobcheck">
+                                        <label for="idioma4" class="jobtextos">Arabe</label><br>
+                                        <input type="checkbox" id="idioma5" class="jobcheck">
+                                        <label for="idioma5" class="jobtextos">Portugués</label><br>
+                                        <input type="checkbox" id="idioma6" class="jobcheck">
+                                        <label for="idioma6" class="jobtextos">Español</label><br>
+                                    </div>
+                                    <div style="height: 20px"></div>
+                                    <div>
+                                        <label class="jobtextos">Máquinas de oficina y/o equipo de trabajo que sepa manejar:</label><br>
+                                        <input type="checkbox" id="mof1" class="jobcheck">
+                                        <label for="mof1" class="jobtextos">Impresoras</label><br>
+                                        <input type="checkbox" id="mof2" class="jobcheck">
+                                        <label for="mof2" class="jobtextos">Engrapadoras y perforadoras</label><br>
+                                        <input type="checkbox" id="mof3" class="jobcheck">
+                                        <label for="mof3" class="jobtextos">Sistemas de videoconferencia</label><br>
+                                        <input type="checkbox" id="mof4" class="jobcheck">
+                                        <label for="mof4" class="jobtextos">Destructoras de papel</label><br>
+                                        <input type="checkbox" id="mof5" class="jobcheck">
+                                        <label for="mof5" class="jobtextos">Detectores de billetes falsos</label><br>
+                                        <input type="checkbox" id="mof6" class="jobcheck">
+                                        <label for="mof6" class="jobtextos">Cámaras de seguridad</label><br>
+                                    </div>
+                                    <div style="height: 20px"></div>
+                                </div>
+                                <div class="jobflex">
+                                    <div>
+                                        <label class="jobtextos">Funciones de oficina que domina:</label><br>
+                                        <input type="checkbox" id="fof1" class="jobcheck">
+                                        <label for="fof1" class="jobtextos">Organización de documentos físicos y digitales</label><br>
+                                        <input type="checkbox" id="fof2" class="jobcheck">
+                                        <label for="fof2" class="jobtextos">Elaboración de documentos y reportes de resultados</label><br>
+                                        <input type="checkbox" id="fof3" class="jobcheck">
+                                        <label for="fof3" class="jobtextos">Dominio avanzado o intermedio de la suite de Microsoft Office o Google Workspace</label><br>
+                                        <input type="checkbox" id="fof4" class="jobcheck">
+                                        <label for="fof4" class="jobtextos">Control de inventario (registro de insumos de oficina, monitoreo de stock y realización de pedidos)</label><br>
+                                    </div>
+                                    <div style="height: 20px"></div>
+                                    <div>
+                                        <label class="jobtextos">¿Cual es su comida favorita?</label><br>
+                                        <select id="jobcomewe" class="jobtextos2 jobselect jobespecial">
+                                            <option value="z">No me gusta la comida</option>
+                                            <option value="a">Pizza</option>
+                                            <option value="b">Espagueti</option>
+                                            <option value="c">Sushi</option>
+                                            <option value="d">Carne asada (en general)</option>
+                                            <option value="e">Mole</option>
+                                            <option value="f">Hamburguesa</option>
+                                            <option value="h">Tamales</option>
+                                            <option value="i">Sopas instantaneas en general</option>
+                                            <option value="j">Papas con chorizo</option>
+                                            <option value="k">Todas</option>
+                                            <option value="l">Ninguna de estas</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div style="height: 15px"></div>
+                        <fieldset class="jobfield">
+                            <legend class="jobleyenda">Historial laboral</legend>
+                            <label class="jobtextos">¿Usted ha trabajado antes?</label><br>
+                            <label class="jobtextos">
+                                <input type="radio" name="jobR" value="1">
+                                Si
+                            </label><br>
+                            <label class="jobtextos">
+                                <input type="radio" name="jobR" value="2">
+                                No
+                            </label>
+                            <div style="height: 15px"></div>
+                            <div id="joboculto" style="display:none;">
+                                <label class="jobtextos">¿Donde ha trabajado?</label><br>
+                                <select class="jobtextos2 jobselect">
+                                    <option value="">...</option>
+                                    <option value="a">En la biblioteca de mi papá</option>
+                                    <option value="b">En los tacos de la esquina</option>
+                                    <option value="c">En una escuela</option>
+                                    <option value="d">En Disney</option>
+                                    <option value="e">En una panaderia</option>
+                                </select>
+                            </div>
+                        </fieldset>
+                        <h2 style="font-size:20px; font-weight: 500;">Si pudieras firmar firmarias aqui pero considere dificil hacer un sistema de firmas asi que pues no es el caso</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="jobcont">
+                <button type="button" class="jobboton" id="jobreal">Enviar solucitud</button>
+            </div>
+            <div id="resulanim"></div>
+            <div class="jobcont2">
+                <h2 class="zzz" id="jobresultado">_</h2>
+            </div>
+            <script src="jobjava.js"></script>
         </div>
     </div>
+    <script src="titiritero.js"></script>
 </body>
 </html>

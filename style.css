@@ -11,6 +11,18 @@ body {
     background-color: bisque;
     margin: 0;
 }
+.inir1 {
+    display: block;
+}
+.inir2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.inir3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 .parte1{
     border: 10px bisque;
     background-color: bisque;
@@ -18,11 +30,43 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 0;
+    margin: 0;
+}
+.iniflex {
+    flex: 1;
+    width: 100%;
+    min-width: 320px;
+}
+.inimg {
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 5px #000;
+}
+.inipizza {
+    width: 100%;
+    height: auto;
+}
+.ini2 {
+    margin: 15px;
+}
+.iniv {
+    width: 100%;
+    font-family: "Delius", cursive;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+    align-content: right;
+}
+.inishadow {
+    box-shadow: 0 0 25px #503416;
+    margin: 20px 0;
 }
 .python {
-    background-color: rgb(12, 22, 7);
+    background-color: #0c1607;
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 40px;
@@ -58,18 +102,171 @@ body {
     max-width: 900px;
     height: auto;
 }
+.inisel {
+    background-color: #ffd595;
+    border: 3px solid #613111;
+    border-radius: 5px;
+    font-family: "Delius", cursive;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-bottom: 1px;
+}
+.inititul {
+    background-color: #ffc164;
+    font-family: "Delius", cursive;
+    font-size: 28px;
+    border: 2px solid #110000;
+    padding: 3px;
+    font-weight: 600;
+}
+.inipa {
+    font-family: "Delius", cursive;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.iniwei {
+    font-weight: 600;
+}
+.inifield {
+    background-color: #ffe761;
+    border: 3px solid #945f23;
+    margin-right: 10px;
+}
+.inidice {
+    font-family: "Delius", cursive;
+    font-size: 28px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.iniini {
+    font-family: "Delius", cursive;
+    font-size: 20px;
+    margin: 5px 10px;
+    background-color: #ffdbaf;
+    border: 3px solid #613111;
+    border-radius: 10px;
+    padding: 0 15px;
+    transition: font-size 0.25s ease-in-out, border-radius 0.25s ease-in-out, background-color 1s ease-in-out;
+}
+.iniini:hover {
+    background-color: #ffd561;
+    font-size: 35px;
+    border-radius: 15px;
+}
+.iniini:active {
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+.inipy {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 5px 10px;
+    color: #ffffff;
+    background-color: #000000;
+    border: 3px solid #d1df86;
+    box-shadow: 0 0 10px #566118;
+    padding: 2px 15px;
+    transition: font-size 0.25s ease-in-out, background-color 1s ease-in-out;
+}
+.inipy:hover {
+    font-size: 37px;
+    background-color: #12200a;
+}
+.inipy:active {
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+.inifiu {
+    font-family: "Merienda", cursive;
+    font-size: 19px;
+    margin: 5px 10px;
+    background-color: #c4f8ff;
+    border: 4px solid #68d2ec;
+    box-shadow: 0 0 8px #3a7481;
+    border-radius: 12px;
+    padding: 0 15px;
+    transition: font-size 0.15s ease-in-out, border-radius 0.2s ease-in-out, background-color 1s ease-in-out;
+}
+.inifiu:hover {
+    background-color: #5decff;
+    font-size: 35px;
+    border-radius: 18px;
+}
+.inifiu:active {
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+.iniquiz {
+    font-family: "Metrophobic", sans-serif;
+    font-size: 19px;
+    margin: 5px 10px;
+    background-color: #8ae4ff;
+    border: 3px solid #377bd4;
+    box-shadow: 0 0 5px #000000;
+    border-radius: 9px;
+    padding: 2px 17px;
+    transition: font-size 0.15s ease-in-out, border-radius 0.2s ease-in-out, background-color 1s ease-in-out;
+}
+.iniquiz:hover {
+    background-color: #97c4ff;
+    font-size: 35px;
+    border-radius: 14px;
+}
+.iniquiz:active {
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
+.inijob {
+    font-family: "Times New Roman";
+    font-weight: 200;
+    font-size: 22px;
+    margin: 5px 10px;
+    background-color: #f5f5f5;
+    border: 2px solid #0c283f;
+    padding: 2px 15px;
+    transition: font-size 0.25s ease-in-out, background-color 1s ease-in-out;
+}
+.inijob:hover {
+    font-size: 37px;
+    background-color: #cfcfcf;
+}
+.inijob:active {
+    font-size: 28px;
+    position: relative;
+    top: 2px;
+}
 .profile_textochido {
     font-family: "Delius", cursive;
-    font-size: 24px;
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    margin: 10px 0;
 }
 .holal {
     font-family: "Delius", cursive;
-    font-size: 50px;
+    font-size: clamp(2.5rem, 4vw, 4rem);
     text-align: center;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.hola2 {
+    font-family: "Delius", cursive;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+    bottom: -10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 .nop {
     font-family: "Cutive Mono", monospace;
-    font-size: clamp(4.5rem, 5vw, 6rem);
+    font-size: clamp(4.5rem, 6vw, 6rem);
     color: azure;
     position: relative;
     bottom: -30px;
@@ -226,17 +423,16 @@ body {
 }
 .jobapi {
     font-family: "Times New Roman";
-    background-color: rgb(212, 212, 212);
-    position: relative;
-    height: 100vh;
+    background-color: #c9c9c9;
 }
 .temp {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
     position: relative;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 25px;
 }
 .profile_otro {
@@ -244,7 +440,167 @@ body {
     font-size: 20px;
 }
 .onoermano {
-    font-size: 55px;
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    margin: 0;
+    margin-top: 60px;
+}
+.job123 {
+    display: block;
+    background-color: #f5f5f5;
+    width: 99%;
+    max-width: 1000px;
+    text-align: left;
+    padding: 30px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 25px #6e6e6e;
+}
+.jobcont {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    align-items: center;
+    align-content: center;
+}
+.jobboton {
+    background-color: #ffffff;
+    font-family: Times New Roman;
+    font-size: 28px;
+    padding: 5px 20px;
+    border: 2px solid #444;
+    cursor: pointer;
+}
+.jobboton:active {
+    background-color: #dee5e9;
+    position: relative;
+    top: 2px;
+}
+.jobtextos {
+    color: #000044;
+    font-family: "Times New Roman";
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 15px;
+    background-color: #e4e2de;
+    width: fit-content;
+}
+.jobtextos2 {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    background-color: #f0f0f0;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.jobinput {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    border-radius: 5px;
+    border-width: 0;
+    outline-style: solid;
+    outline-color: #4e4e4e;
+    outline-width: 1px;
+}
+.jobnum {
+    width: 50px;
+}
+.jobnum2 {
+    width: 130px;
+}
+.jobcheck {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.jobinput:focus {
+    border-radius: 0;
+    border-width: 0;
+    outline-width: 2px;
+}
+.jobleyenda {
+    font-size: 20px;
+    padding: 3px;
+    border: 1px solid #000000;
+    background-color: #e4eeff;
+}
+.jobfield {
+    padding: 15px 20px;
+    border: 2px solid #555577;
+    gap: 0;
+}
+.jobnotas {
+    font-family: "Times New Roman";
+    font-size: 18px;
+}
+.jobyawe {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 15px;
+}
+.jobflex {
+    flex: 1;
+    min-width: 200px;
+}
+.jobselect {
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+    padding: 0;
+    outline: none;
+}
+.jobespecial {
+    width: 90%
+}
+.jobselect:focus {
+    outline: none;
+    border: 2px solid #646464;
+    border-radius: 0;
+}
+.jobfecha {
+    font-family: "Times New Roman";
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    background-color: #f0f0f0;
+    outline: none;
+    border: 1px solid #4e4e4e;
+    border-radius: 5px;
+}
+.jobfecha:focus {
+    outline: none;
+    border: 2px solid #4e4e4e;
+    border-radius: 0;
+}
+.jobtitulo {
+    text-align: center;
+    margin: 0 0 30px 0;
+    color: #000044;
+}
+.gen_izq {
+    text-align: right;
+}
+#resulanim {
+    align-items: center;
+    align-content: center;
+    width: clamp(300px, 50vw, 600px);
+    aspect-ratio: 900 / 200;
+    background-size: 1300% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+@keyframes jobsprite {
+    from { background-position: 0% 0; }
+    to   { background-position: 100% 0; }
+}
+.jobcontr {
+    background-image: url("Contratado.png");
+    animation: jobsprite 0.2s steps(12) forwards;
+}
+.jobrecha {
+    background-image: url("Rechazado.png");
+    animation: jobsprite 0.2s steps(12) forwards;
+}
+.jobpendi {
+    background-image: url("Pendiente.png");
+    animation: jobsprite 0.2s steps(12) forwards;
 }
 .dvdxd {
     position: absolute;
@@ -254,10 +610,13 @@ body {
     pointer-events: none;
 }
 .zzz {
+    width: 100%;
+    max-width: 1000px;
     font-size: 25px;
+    font-weight: 600;
 }
 .quiz {
-    background-color: rgb(151, 196, 255);
+    background-color: #97c4ff;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -270,6 +629,7 @@ body {
 .quiz_titulo {
     font-family: "Metrophobic", sans-serif;
     font-size: 70px;
+    margin: 20px 0;
 }
 .quiz_texto {
     font-family: "Metrophobic", sans-serif;
@@ -279,28 +639,28 @@ body {
     font-size: 20px;
 }
 .quiz_form {
-    background-color: rgb(86, 208, 238);
-    outline: 4px solid rgb(34, 156, 187);
+    background-color: #56d0ee;
+    outline: 4px solid #229cbb;
     border-radius: 15px;
     box-shadow: 0 0 15px black;
     width: 96%;
     max-width: 1000px;
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     text-align: left;
     padding-right: 10px;
 }
 .quiz_formrr {
-    background-color: rgb(86, 208, 238);
-    outline: 4px solid rgb(34, 156, 187);
+    background-color: #56d0ee;
+    outline: 4px solid #229cbb;
     border-radius: 15px;
     box-shadow: 0 0 15px black;
     width: 96%;
     max-width: 1000px;
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     text-align: left;
     padding-right: 10px;
 }

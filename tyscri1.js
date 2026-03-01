@@ -22,7 +22,7 @@ async function escribirEnOrden(elementos) {
     }
 }
 
-const seccion = document.getElementById("pyseto");
+const seccion = document.getElementById("python");
 const textos = seccion.querySelectorAll(".typewriter");
 
 const observer = new IntersectionObserver(entries => {
@@ -57,7 +57,7 @@ const observerFade = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("volarf");
-            observerFade.unobserve(entry.target); // solo una vez
+            observerFade.unobserve(entry.target);
         }
     });
 }, {
