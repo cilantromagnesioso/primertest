@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://cilantromagnesioso.github.io/primertest/" />
     <meta property="og:title" content="De pepperoni" />
     <meta property="og:description" content="¿Sabes que tiene la pizza?" />
-    <meta property="og:image" content="https://cilantromagnesioso.github.io/primertest/plogo.png" />
+    <meta property="og:image" content="https://cilantromagnesioso.github.io/primertest/plogo_og.png" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,8 +42,7 @@
             <div class="iniflex">
                 <fieldset class="inifield">
                     <legend class="inititul">¿Que hay de nuevo?</legend>
-                    <p class="inipa">- Se añadio la seccion de la solucitud de empleo (parodia)</p>
-                    <p class="inipa">- Se rediseño por completo la seccion inicial (la que estas viendo ahora)</p>
+                    <p class="inipa">- Se añadio la seccion del sotano de la prepa</p>
                     <p class="inipa">- cambios menores</p>
                     <img class="inimg" src="qimg.png">
                 </fieldset>
@@ -54,9 +53,10 @@
                 <button class="inipy" onclick="inicontrol('python')">-Python</button><br>
                 <button class="inifiu" onclick="inicontrol('flutter')">&gt;Flutter</button><br>
                 <button class="iniquiz" onclick="inicontrol('quiziq')">Quiz de IQ</button><br>
-                <button class="inijob" onclick="inicontrol('jobsolicitud')">Solicitud de empleo</button>
+                <button class="inijob" onclick="inicontrol('jobsolicitud')">Solicitud de empleo</button><br>
+                <button class="inicbtis" onclick="inicontrol('skul')">Sotano de la prepa</button>
             </div>
-            <h2 class="iniv">Version 1.6.0</h2>
+            <h2 class="iniv">Version 1.7.0</h2>
         </div>
     </div>
     <div class="python" id="python">
@@ -535,6 +535,20 @@
             </div>
             <script src="jobjava.js"></script>
         </div>
+    </div>
+    <div class="cbtis" id="skul">
+        <label>ejercicio</label>
+        <select id="sk_ejercicio">
+            <option value="z">inicio</option>
+            <option value="a">1</option>
+            <option value="b">2</option>
+            <option value="c">3</option>
+        </select>
+        <div id="ejercicio_s">
+            <h1>Sotano de la prepa</h1>
+            <p>En esta seccion estaran mis ejercicios de la escuela</p>
+        </div>
+        <script src="escuela_prg.js"></script>
     </div>
     <script src="titiritero.js"></script>
 </body>

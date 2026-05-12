@@ -8,8 +8,8 @@
     --color2p3: #020018;
 }
 body {
-    background-color: bisque;
     margin: 0;
+    gap: 0;
 }
 .inir1 {
     display: block;
@@ -67,6 +67,7 @@ body {
 }
 .python {
     background-color: #0c1607;
+    padding-top: 30px;
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 40px;
@@ -267,9 +268,9 @@ body {
 .nop {
     font-family: "Cutive Mono", monospace;
     font-size: clamp(4.5rem, 6vw, 6rem);
+    margin: 0;
     color: azure;
     position: relative;
-    bottom: -30px;
 }
 .pobre {
     font-family: "Cutive Mono", monospace;
@@ -948,4 +949,11 @@ body {
 }
 .fiupad {
     padding: 8px 0;
+}
+.cbtis {
+    margin: 5px;
+    height: 100vh;
+}
+.inicbtis {
+    margin-left: 15px;
 }
