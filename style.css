@@ -951,9 +951,14 @@ body {
     padding: 8px 0;
 }
 .cbtis {
-    margin: 5px;
-    height: 100vh;
+    margin: 7px;
+    min-height: 100vh;
 }
 .inicbtis {
     margin-left: 15px;
+}
+.img1skul {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
