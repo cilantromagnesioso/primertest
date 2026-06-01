@@ -1,0 +1,60 @@
+body {
+    background-color: white;
+    font-family: serif;
+}
+h1 {
+    font-size: 30px;
+    color: #d4c19c;
+    background-color: #9d2449;
+    padding: 20px;
+}
+p {
+    font-size: 18px;
+}
+nav {
+    background-color: #691C32;
+    padding: 20px;
+}
+nav a {
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: #691C32;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 10px 15px;
+}
+nav a:hover {
+    background-color: #2b0c14;
+    color: #d4c19c;
+    text-decoration: underline;
+}
+li {
+    width: fit-content;
+    height: fit-content;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out;
+    font-size: 20px;
+    padding: 2px 0;
+}
+li:hover {
+    background-color: #691C32;
+    transform: translateX(7px);
+}
+li a {
+    color: #691C32;
+    transition: color 0.3s ease-out;
+}
+li a:hover {
+    color: white;
+}
+input[type="submit"] {
+    color: white;
+    background: none;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #9d2449;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #691C32;
+}

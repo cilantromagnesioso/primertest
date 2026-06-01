@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Delius&family=Merienda:wght@300..900&family=Metrophobic&display=swap');
-:root {
-    --color1p1: #cfff60;
-    --color1p2: #a8d457;
-    --color1p3: #0d1800;
-    --color2p1: #6060ff;
-    --color2p2: #579cd4;
-    --color2p3: #020018;
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Delius&family=Merienda:wght@300..900&family=Metrophobic&family=Lilita+One&family=Roboto+Condensed&display=swap');
+@font-face {
+    font-family: 'VGA';
+    src: url('Perfect DOS VGA 437 Win.ttf') format('truetype');
 }
 body {
     margin: 0;
@@ -159,20 +155,25 @@ body {
     top: 2px;
 }
 .inipy {
-    font-family: "Cutive Mono", monospace;
-    font-weight: 600;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
     font-size: 22px;
     margin: 5px 10px;
-    color: #ffffff;
-    background-color: #000000;
-    border: 3px solid #d1df86;
-    box-shadow: 0 0 10px #566118;
+    color: #101c25;
+    background-color: #5cb5f7;
+    border: 4px solid #093b61;
+    border-radius: 17px;
     padding: 2px 15px;
-    transition: font-size 0.25s ease-in-out, background-color 1s ease-in-out;
+    box-shadow: 0 0 0px 0px #000000;
+    transition: font-size 0.25s ease-in-out, background-color 1s ease-in-out, box-shadow 1s ease-in-out, border-radius 0.75s ease-in-out, border 0.75s ease-in-out, color 0.5s ease-in-out;
 }
 .inipy:hover {
     font-size: 37px;
-    background-color: #12200a;
+    color: #ffffff;
+    background-color: #000000;
+    border: 4px solid #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 0 6px 1px #000000;
 }
 .inipy:active {
     font-size: 28px;
@@ -961,4 +962,270 @@ body {
     width: 100%;
     max-width: 350px;
     height: auto;
+}
+.godot {
+    background-color: #5cb5f7;
+    padding: 20px 0;
+    min-height: 90vh;
+}
+.godotitul {
+    font-family: "Lilita One", sans-serif;
+    color: #101c25;
+    font-size: clamp(4rem, 5vw, 5.5rem);
+    font-weight: 600;
+    line-height: 0.9;
+    padding-left: 4.5%;
+    margin: 25px 0;
+    margin-bottom: 20px;
+}
+.godot_p {
+    font-family: "Roboto Condensed", sans-serif;
+    padding-left: 4.5%;
+    font-size: calc(1rem + 1vw);
+    margin: 25px 0;
+    margin-top: 16px;
+}
+.godotdesplegable {
+    margin: 0 3%;
+}
+.godot_juego_d {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.godot_juego_d:hover {
+    transform: translateX(10%);
+}
+.godotcontento {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1.0s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.godot_svg {
+    height: 0;
+    overflow: hidden;
+}
+.godot_svg svg {
+    width: 96%;
+    aspect-ratio: 4/3;
+    height: auto;
+}
+.godot_ejdb_titul {
+    font-family: "Cutive Mono", monospace;
+    font-weight: 600;
+    font-size: calc(1rem + 1vw);
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 2px 1px #000000;
+    padding: 6px 18px;
+    transition: box-shsadow 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.godot_ejdb_titul:hover {
+    box-shadow: 0 0 3px 3px #000000;
+}
+.ejdb1 {
+    width: 60%;
+    min-width: 300px;
+    height: auto;
+}
+.jogodobotao {
+    font-family: "Delius", cursive;
+    font-size: 20px;
+    font-weight: 400;
+}
+.boton {
+    font-family: "VGA";
+    font-size: 24px;
+}
+.pantalla_moni {
+    position: relative;
+    overflow: hidden;
+    filter: url('#crt-curve');
+}
+.godot_ejdb {
+    height: 0px;
+    overflow: hidden;
+    background-color: #000000;
+    padding: 15px;
+    border: 3px solid white;
+    box-shadow: 0 0 4px 4px #000000;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 5px;
+    box-sizing: border-box;
+    transition: height 1.0s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.body_s {
+    background-color: white;
+    font-family: cursive;
+}
+.body_s h1 {
+    font-size: 30px;
+    color: #d4c19c;
+    background-color: #9d2449;
+    padding: 20px;
+}
+.body_s p {
+    font-size: 18px;
+    margin: 10px;
+}
+.nav_s {
+    background-color: #691C32;
+    padding: 20px;
+}
+.nav_s a {
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-color: #691C32;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 15px;
+}
+.nav_s a:hover {
+    background-color: #2b0c14;
+    color: #d4c19c;
+    text-decoration: underline;
+}
+.body_s li {
+    width: fit-content;
+    height: fit-content;
+    border-width: 1px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 0px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease-out, transform 0.3s ease-out, border-radius 0.3s ease-out, border-color 0.3s ease-out;
+    font-size: 20px;
+    padding: 2px 0;
+}
+.body_s li:hover {
+    background-color: #691C32;
+    border-color: #000000;
+    transform: translateX(6px);
+    border-radius: 8px;
+}
+.body_s li a {
+    color: #691C32;
+    transition: color 0.3s ease-out;
+}
+.body_s li a:hover {
+    color: white;
+}
+.nota {
+    background: #fff5cb;
+    padding: 5px 10px;
+    box-shadow: -4px 4px 10px 1px #645b36;
+}
+.sombra_s {
+    box-shadow: 0 0 12px #83484b;
+}
+#celeskul {
+    margin: 0;
+    width: fit-content;
+    background-color: #000000;
+    padding: 3px;
+    color: #fff5cb;
+}
+.pcolor_s {
+    color: #833c3c;
+    -webkit-text-stroke: 1px #662a2a; 
+    padding-bottom: 15px;
+}
+.periodico_s {
+    float: right;
+    width: 30%;
+    margin: 6px;
+    margin-top: 0;
+    border-radius: 0;
+    outline: 4px solid #833c3c;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), filter 0.3s cubic-bezier(0.22, 1, 0.36, 1), outline 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-radius 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.periodico_s:hover {
+    transform: scale(0.95);
+    outline: 7px solid #af1414;
+    filter: brightness(70%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.columnas_s {
+    display: flex;
+    gap: 15px;
+}
+.columna_s {
+    flex: 1;
+}
+.contenedor_s {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+.menu_s {
+    width: 20vw;
+    height: 100vh;
+    background-color: #175e32;
+    padding: 20px;
+}
+.fix_s1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 10px 0;
+    -webkit-text-stroke: 1px white;
+}
+.menu_s a {
+    padding: 4px;
+    width: fit-content;
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 4px 0;
+    transform: translateX(0px);
+    transition: background-color 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.menu_s a:hover {
+    background-color: #05421c;
+    box-shadow: 0 0 15px #05421c;
+    transform: translateX(10px);
+}
+.contenido_s {
+    flex: 1;
+}
+.contenido_s iframe {
+    width: 100%;
+    height: 100vh;
+    border: none;
+}
+@media (max-width: 650px) {
+    .godotdesplegable {
+        margin: 0;
+    }
+    .godot_svg svg {
+        width: 100%;
+    }
+    .periodico_s {
+        float: none;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .columnas_s {
+        display: block;
+        gap: 0;
+    }
+    .contenedor_s {
+        display: block;
+        width: 100%;
+    }
+    .menu_s {
+        width: 100%;
+        height: auto;
+    }
+}
+#outline_s {
+    color: #7e1919;
 }

@@ -13,6 +13,13 @@
     <meta property="og:description" content="¿Sabes que tiene la pizza?" />
     <meta property="og:image" content="https://cilantromagnesioso.github.io/primertest/plogo_og.png" />
     <link rel="stylesheet" href="style.css">
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.184.0/build/three.module.js"
+        }
+    }
+    </script>
 </head>
 <body>
     <div id="inicio" class="parte1">
@@ -42,79 +49,52 @@
             <div class="iniflex">
                 <fieldset class="inifield">
                     <legend class="inititul">¿Que hay de nuevo?</legend>
-                    <p class="inipa">- Se añadieron nuevos ejercicios a la seccion del sotano de la prepa</p>
-                    <p class="inipa">- El juego del boton saldra pronto</p>
-                    <p class="inipa">- Cambios menores</p>
+                    <p class="inipa">- Se añadio la seccion de Juegos de pepperoni reemplazando a las de Python y Flutter</p>
+                    <p class="inipa">- El juego del boton saldra muy pronto</p>
+                    <p class="inipa">- Se añadieron 5 nuevos ejercicios al sotano de la prepa</p>
+                    <p class="inipa">- Cambios ¿menores?</p>
                     <img class="inimg" src="qimg.png">
                 </fieldset>
             </div>
             <div class="iniflex">
                 <h2 class="inidice">Indice de secciones</h2>
                 <button class="iniini" onclick="inicontrol('inicio')">Inicio</button><br>
-                <button class="inipy" onclick="inicontrol('python')">-Python</button><br>
-                <button class="inifiu" onclick="inicontrol('flutter')">&gt;Flutter</button><br>
+                <button class="inipy" onclick="inicontrol('godot')">Juegos de pepperoni</button><br>
                 <button class="iniquiz" onclick="inicontrol('quiziq')">Quiz de IQ</button><br>
                 <button class="inijob" onclick="inicontrol('jobsolicitud')">Solicitud de empleo</button><br>
                 <button class="inicbtis" onclick="inicontrol('skul')">Sotano de la prepa</button>
             </div>
-            <h2 class="iniv">Version 1.7.1</h2>
+            <h2 class="iniv">Version 1.7.2</h2>
         </div>
     </div>
-    <div class="python" id="python">
-        <h1 class="nop">-Python</h1>
-        <h2 class="pobre typewriter" data-text="Aqui publicare programas que hice en Python (cada que tenga uno, obvio)">_</h2>
-        <div class="fiuespacio">
-            
+    <div class="godot" id="godot">
+        <h1 class="godotitul">Juegos de pepperoni</h1>
+        <div class="godot_svg">
+            <svg width="1800" height="1350">
+                <defs>
+                    <filter id="crt-curve" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+                        <feImage result="displaceMap" x="0%" y="0%" width="100%" height="100%" preserveAspectRatio="none" />
+                        <feDisplacementMap in="SourceGraphic" in2="displaceMap" scale="80" xChannelSelector="R" yChannelSelector="G" />
+                    </filter>
+                </defs>
+            </svg>
         </div>
-        <div class="py2">
-            <img src="lgo1.png" class="eljogor">
+        <p class="godot_p">Aqui estaran todos los juegos que haga :)</p>
+        <div class="godotdesplegable">
+            <button class="godot_juego_d godot_ejdb_titul">El juego del boton</button>
+            <div class="godotcontento">
+                <div class="pantalla_moni">
+                    <div class="godot_ejdb">
+                        <div style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                            <p style="font-size: 38px; margin: 0; margin-top: 20px;">PROXIMAMENTE</p>
+                            <img src="ejdb.png" alt="el juego del boton" class="ejdb1">
+                            <p style="font-size: 26px; margin: 0;">En medio de un espacio oscuro, un botón te pide que lo presiones para ganar y posteriormente irte, pero... si continuas presionando al botón... lo haras enojar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2 class="py typewriter" data-text="PROXIMAMENTE">_</h2>
-        <div class="py1">
-            <h2 class="noseque typewriter" data-text="Aqui una imagen del juego">_</h2>
-            <img src="capturalgobien.png" class="pysiz">
-            <h2 class="noseque typewriter" data-text="Solo esta disponible para computadoras con Windows, la version para celulares esta en la seccion de abajo (Flutter)">_</h2>
-        </div>
-        <h2 class="pobreint typewriter" data-text="Link de descarga:">_</h2>
-        <a href="eljuegodelboton.zip" class="links" download>El juego del boton DEMO.zip</a>
-    </div>
-    <div class="fiu" id="flutter">
-        <div>
-            <div class="fiu21">
-                <h1 class="fliurer">&gt;Flutter</h1>
-            </div>
-            <h2 class="fiutexto1">Aqui publicare las aplicaciones que hare con Flutter (las cuales seran las de python pero para celulares)</h2>
-            <div class="fiuespacio">
-                
-            </div>
-            <div class="recflur1">
-                <img src="lgo1.png" class="fiutexto1 fiu20">
-            </div>
-            <div class="fiuespacio">
-                
-            </div>
-            <div class="recflur2">
-                <h2 class="fiutexto1 fiupad">PROXIMAMENTE</h2>
-            </div>
-            <div class="fiuespacio">
-                
-            </div>
-            <div class="recflur3">
-                <h2 class="fiutexto1">Aqui una imagen del juego</h2>
-                <img src="captflu.jpg" class="fiutexto1 fiu22">
-                <h2 class="fiutexto1">Por cierto, no esta disponible para iPhones por limitaciones tecnicas</h2>
-            </div>
-            <div class="fiuespacio">
-                
-            </div>
-            <div class="recflur2">
-                <h2 class="fiutexto1 fiugrande">Link de descarga:</h2>
-            </div>
-            <div class="fiulinks">
-                <a href="eljuegodelboton_v102.apk" class="lios" download>El juego del boton DEMO.apk</a>
-            </div>
-            <script src="tyscri1.js"></script>
-        </div>
+        <script src="gdscript.js"></script>
     </div>
     <div id="quiziq">
         <div class="quiz">
@@ -548,6 +528,11 @@
             <option value="e">5</option>
             <option value="f">6</option>
             <option value="g">7</option>
+            <option value="h">8</option>
+            <option value="i">9</option>
+            <option value="j">10</option>
+            <option value="k">11</option>
+            <option value="l">12</option>
         </select>
         <div id="ejercicio_s">
             <h1>Sotano de la prepa</h1>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+    <link rel="stylesheet" href="ejercicio_s.css">
+</head>
+<body>
+    <img src="skul_a.jpg" alt="imagen de escuela" width="50%" height="50%">
+    <hr>
+    <h1>Formulario de alumno</h1>
+    <form>
+        <img src="skul_c.png" alt="alumno" width="3%" height="3%">
+        <label>Nombre del alumno:</label>
+        <input type="text" name="nombreestudiante">
+        <br><br>
+        <label>Estudiante regular:</label>
+        <input type="checkbox" name="regular">
+        <br><br>
+        
+        <label>Edad del estudiante:</label>
+        <input type="number" name="edad">
+        <br><br>
+        <label>Fecha de nacimiento:</label>
+        <input type="date" name="nacimiento">
+        <br><br>
+        <label>Tipo de sangre:</label>
+        <img src="skul_b.jpg" alt="tipo de sangre" width="5%" height="5%">
+        <select name="sangretip">
+            <option value="">seleccione</option>
+            <option value="1">A+</option>
+            <option value="2">A-</option>
+            <option value="3">B+</option>
+            <option value="4">B-</option>
+            <option value="5">AB+</option>
+            <option value="6">AB-</option>
+            <option value="7">O+</option>
+            <option value="8">O-</option>
+        </select>
+        <br><br>
+        
+        <label>Turno:</label>
+        <input type="radio" name="turno" value="m"> Matutino
+        <input type="radio" name="turno" value="v"> Vespertino
+        <input type="radio" name="turno" value="n"> Nocturno
+        <br><br>
+        <label>Genero:</label>
+        <input type="radio" name="genero" value="masculino"> Masculino
+        <input type="radio" name="genero" value="femenino"> Femenino
+        <br><br>
+        <input type="submit" value="Enviar informacion">
+    </form>
+    <br>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="info.html">informacion de pagina</a> |
+        <a href="contacto.html">contacto</a>
+    </nav>
+</body>
+</html>
